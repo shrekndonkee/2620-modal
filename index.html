@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="stylesheet" href="styles.css">
+
+    <title>Voidline Street-Wear | Shoes</title>
+  </head>
+  <body class="min-h-screen flex flex-col ">
+    <div class="">
+   <header class="grid grid-cols-[auto_44px_44px_44px] sm:grid-cols-[auto_44px_44px] p-2 gap-2 border-b">
+    <img src="images/voidline-logo.svg" alt="Voidline Logo" width="80" height="45">
+    <a class="w-11 h-11 flex justify-around" href="#"><img class="w-4" src="images/person-circle.svg"></a>
+    <a class="w-11 h-11 flex justify-around" href="#"><img class="w-4" src="images/bag.svg"></a>
+    <a id ="hamburger"class="w-11 h-11 flex justify-around sm:hidden" href="#"><img class="w-4" src="images/burger-menu.svg"></a>
+   </header>
+    <nav id="primaryNav" class="bg-gray-200">
+<ul class="flex flex-col sm:flex-row sm:border-b">
+<li class="border-b border-black-300 sm:border-b-0">
+<a href="#font" class="block py-2 px-3 hover:bg-white ">Home</a>
+</li>
+
+<li class="border-b border-black-300 sm:border-b-0">
+<a href="#breakpoint" class="block py-2 px-3 hover:bg-white text-red-950 font-bold">Shoes</a>
+</li>
+
+<li class="border-b border-black-300 sm:border-b-0">
+<a href="#color" class="block py-2 px-3 hover:bg-white ">Cart</a>
+</li>
+
+<li class="border-b border-black-300 sm:border-b-0">
+<a href="#color" class="block py-2 px-3 hover:bg-white ">Profile</a>
+</li>
+
+
+
+</ul>
+    </nav>
+    <main class="flex-grow  mx-auto px-2 ">
+
+      <h1 class="text-2xl text-red-950 p-2 font-extrabold">Shoes</h1>
+     <div id="shoes" class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-7xl items-center justify-center mx-auto ">
+
+
+
+     </div>
+
+<dialog id="mydialog" class="w-5/6 max-w-96 rounded-md backdrop:backdrop-opacity-55 m-auto">
+
+  <!-- Header -->
+  <div class="bg-neutral-100 flex justify-between border-b border-neutral-300 px-2 py-2 text-2xl">
+      <h2 id="name" class="text-neutral-900 font-semibold"></h2>
+      <button class="cursor-pointer text-neutral-500 hover:text-neutral-800">X</button>
+  </div>
+
+  <!-- Description -->
+  <p id="desc" class="m-2 text-neutral-700 text-sm"></p>
+
+  <!-- Body -->
+  <section class="grid grid-cols-2 m-2 gap-2">
+      <img id="photo" class="rounded-sm"/>
+
+      <div>
+          <p id="brand" class="m-2 text-neutral-800 font-medium text-sm"></p>
+          <p id="year" class="m-2 text-neutral-600 text-sm"></p>
+          <p id="price" class="m-2 text-neutral-900 text-sm font-semibold"></p>
+          <p class="m-2 text-neutral-700 text-sm">Size Range:</p>
+
+          <ul id="size-range" class="mx-4 mb-4 text-neutral-800 text-sm"></ul>
+      </div>
+  </section>
+
+</dialog>
+
+
+
+    </main>
+    </div>
+    <footer class="  text-mygrey-60 text-center p-2 mt-auto">©<span id="year"></span> Alan Martinez-Diaz • DWDD 2620</footer>
+  </body>
+
+  <script src="navigation.js" type="module"></script>
+  <script>
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="data/scripts.js" type="module"></script>  
+</html>

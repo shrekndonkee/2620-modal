@@ -1,0 +1,35 @@
+
+    @import "tailwindcss";
+    @config "./tailwind.config.js";
+
+    @theme {
+      --font-stack: "Stack Sans Text", sans-serif;
+      --breakpoint-sm: 32rem;
+      --breakpoint-md: 56rem;
+
+     
+     
+
+      /*Color Palette*/
+      --color-mynavy: #1A1F2B;
+      --color-myslateblue: #3D5A80;
+      --color-mysoftcyan: #98C1D9;
+      --color-myicewhite: #E0FBFC;
+      --color-mywarmcoral: #EE6C4D;
+
+      /*Grayscale for elements*/
+      --color-mygrey-0: #ffffff;
+      --color-mygrey-5: #F2F2F2;
+      --color-mygrey-10: #e5e5e5;
+      --color-mygrey-20: #cccccc;
+      --color-mygrey-30: #b3b3b3;
+      --color-mygrey-40: #999999;
+      --color-mygrey-50: #808080;
+      --color-mygrey-60: #666666;
+
+
+
+
+    }
+
+
